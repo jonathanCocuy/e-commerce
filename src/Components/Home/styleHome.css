@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap");
+
+@import url(../../Styles/animations.css);
+
+.body-home {
+  background: #ffa2cb;
+}
+
+.title-container {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-principal {
+  padding-top: 30px;
+  font-size: 100px;
+  font-family: Dancing Script;
+  color: #55021a;
+}
+
+.color-delicius {
+  font-family: Dancing Script;
+  color: #f83c86;
+}
+
+.text-information {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paragraph-welcome {
+  width: 50%;
+  font-size: 30px;
+}
+
+.font-image {
+  background: #a70d3b;
+  width: 280px;
+  height: 290px;
+  border-radius: 100%;
+  display: flex;
+}
+
+.img-cupcake {
+  padding-bottom: 10px;
+  transform: scale(1.2);
+  animation: zoom-up 1s ease-in;
+}

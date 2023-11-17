@@ -28,10 +28,11 @@ function App() {
       <Router>
         <section className="section-adress">
           <p>
-            <img src={ImageMap} width={16}></img>&nbsp;
+            <img src={ImageMap} width={16} alt="Location"></img>{" "}
             <a
               href="https://www.google.com/maps/place/Edificio+Raudal+Del+Prado/@4.7171566,-74.0548678,21z/data=!4m6!3m5!1s0x8e3f853815baacdb:0x62bc6a8b2e3c78e!8m2!3d4.7171967!4d-74.0547861!16s%2Fg%2F11gy7z01t4?entry=ttu"
               className="link-adress"
+              rel="noreferrer"
               target="_blank"
             >
               {adressHours}
@@ -42,7 +43,7 @@ function App() {
         <section className="section-nav">
           <ul className="section-list">
             <div>
-              <img src={IconPrincipal} width={70}></img>
+              <img src={IconPrincipal} width={70} alt="Icono"></img>
             </div>
             <li>
               <NavLink to="/" className="items-list">

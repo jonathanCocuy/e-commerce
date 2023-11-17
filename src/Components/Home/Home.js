@@ -16,7 +16,7 @@ import PastelBD from "../../images/pastel-bd-bw.png";
 import Croisant from "../../images/croisant-bw.png";
 import CupcakeBW from "../../images/cupcake-bw.png";
 import DonutBW from "../../images/donut-bw.png";
-import BakeryBD from "../../images/bakery-bw.png";
+import FrutasBW from "../../images/frutas-bw.png";
 
 const Home = () => {
   return (
@@ -91,12 +91,15 @@ const Home = () => {
       </div>
 
       <div className="body-3">
-        <h1 className="title-body-3">More Variety of Products</h1>
+        <h1 className="title-body-3">Más Variedad de Productos</h1>
         <section className="text-information-body-2">
           <p className="paragraph-body-2">
             Encuentra el placer en cada bocado con nuestra amplia selección de
             delicias para satisfacer todos los gustos. ¡Bienvenido a un mundo de
             opciones deliciosas que te dejarán con ganas de más!
+            <br /> <br /> 
+            ¿Quieres ver todos los productos que tenemos disponibles? <br />
+            Da clic en la pestaña de <strong>Productos</strong>
           </p>
         </section>
         <section className="diferent-products">
@@ -107,7 +110,7 @@ const Home = () => {
               width={80}
               alt="Pedazo de pastel"
             ></img>
-            <h3>Gateaux</h3>
+            <h3>Tortas</h3>
           </div>
           <div className="container-image-text-pdts">
             <img
@@ -116,7 +119,7 @@ const Home = () => {
               width={80}
               alt="Pastel"
             ></img>
-            <h3>Cake</h3>
+            <h3>Pasteles</h3>
           </div>
           <div className="container-image-text-pdts">
             <img
@@ -125,7 +128,7 @@ const Home = () => {
               width={80}
               alt="Croisant"
             ></img>
-            <h3>Croisant</h3>
+            <h3>Croisants</h3>
           </div>
           <div className="container-image-text-pdts">
             <img
@@ -134,7 +137,7 @@ const Home = () => {
               width={80}
               alt="Cupcake"
             ></img>
-            <h3>Cupcake</h3>
+            <h3>Cupcakes</h3>
           </div>
           <div className="container-image-text-pdts">
             <img
@@ -143,21 +146,21 @@ const Home = () => {
               width={80}
               alt="Donut"
             ></img>
-            <h3>Donuts</h3>
+            <h3>Donas</h3>
           </div>
           <div className="container-image-text-pdts">
             <img
               className="images-diferent-products"
-              src={BakeryBD}
+              src={FrutasBW}
               width={80}
               alt="Bakery"
             ></img>
-            <h3>Bakery</h3>
+            <h3>Frutas</h3>
           </div>
         </section>
-          <section className="icon-mouse">
-            <img src={IconMouse} width={30} alt="Icon Mouse"></img>
-          </section>
+        <section className="icon-mouse">
+          <img src={IconMouse} width={30} alt="Icon Mouse"></img>
+        </section>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Products from "./Components/Products/Products";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const adressHours = "Carrera 47 #130-62 (Barrio - El Prado)";
@@ -74,6 +75,9 @@ function App() {
           <Route path="/shoppingcart" element={<ShoppingCart />} />
         </Routes>
       </Router>
+
+      <Footer />
+    
     </div>
   );
 }

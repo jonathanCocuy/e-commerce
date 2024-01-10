@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  background: #C6104F;
+}
+
+.footer-social {
+    background: #8b1034;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px
+}
+
+.button-facebook{ 
+    background: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.button-instagram {
+    background: linear-gradient(45deg, #8134AF, #FF5E3A);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.button-whatsapp {
+    background: #32B845;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}

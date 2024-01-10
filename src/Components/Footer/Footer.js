@@ -1,27 +1,68 @@
 /* React */
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 /* CSS  */
 import "./styleFooter.css";
 
 /* Images */
 import IconPrincipal from "../../images/icon-principal.png";
-const  Footer = () =>{
 
-  useEffect(()=> {
+const Footer = () => {
+  useEffect(() => {
     document.getElementById("Year").textContent = new Date().getFullYear();
   }, []);
-  
+
+  const redirectionSocial = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
-    <div className="footer">
-      <img src={IconPrincipal} width={50} alt="Icon Principal" />
-      <footer class="footer-section">
-        <h3>Derechos de autor</h3>
-        <p>&copy; <span id="Year"/></p>
-      </footer>
+    <div>
+      <div className="footer-social">
+        <p>Puedes contactarme:</p>
+        <div className="footer-social-icons">
+          <button
+            className="button-facebook"
+            onClick={() => redirectionSocial("www.facebook.com")}
+          >
+            <FontAwesomeIcon icon={faFacebookF} />
+          </button>
+          <button
+            className="button-instagram"
+            onClick={() => redirectionSocial("www.instagram.com")}
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </button>
+          <button
+            className="button-whatsapp"
+            onClick={() => (redirectionSocial = "www.whatsapp.com")}
+          >
+            <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+          </button>
+        </div>
+      </div>
+
+      <div className="footer">
+        <img
+          className="img-icon"
+          src={IconPrincipal}
+          width={40}
+          alt="Icon Principal"
+        />
+        <footer class="footer-section">
+          <p>
+            &copy; <span id="Year" /> Delicius. Todos los derechos reservados.
+          </p>
+        </footer>
+      </div>
     </div>
   );
-  
-}
+};
 
 export default Footer;

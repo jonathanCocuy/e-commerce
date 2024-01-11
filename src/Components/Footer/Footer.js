@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="footer-social-icons">
           <button
             className="button-facebook"
-            onClick={() => redirectionSocial("www.facebook.com")}
+            onClick={() => redirectionSocial("https://mail.google.com/mail/u/0/#inbox")}
           >
             <FontAwesomeIcon icon={faFacebookF} />
           </button>

@@ -41,6 +41,7 @@ const Footer = () => {
           </button>
           <button
             className="button-whatsapp"
+            // eslint-disable-next-line no-const-assign
             onClick={() => (redirectionSocial = "www.whatsapp.com")}
           >
             <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
